@@ -1,13 +1,10 @@
 <main>
   <h1>{{ messageHome }}</h1>
+  for
   <app-user-card
-    [name]="userA.name"
-    [email]="userA.email"
-    [job]="userA.job"
-  ></app-user-card>
-  <app-user-card
-    [name]="userB.name"
-    [email]="userB.email"
-    [job]="userB.job"
+    *ngFor="let item of userList"
+    [name]="item.name"
+    [email]="item.email"
+    [job]="item.job"
   ></app-user-card>
 </main>
