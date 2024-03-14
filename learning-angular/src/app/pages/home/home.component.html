@@ -1,1 +1,13 @@
-<h1>{{ messageHome }}</h1>
+<main>
+  <h1>{{ messageHome }}</h1>
+  <app-user-card
+    [name]="userA.name"
+    [email]="userA.email"
+    [job]="userA.job"
+  ></app-user-card>
+  <app-user-card
+    [name]="userB.name"
+    [email]="userB.email"
+    [job]="userB.job"
+  ></app-user-card>
+</main>
